@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task: MyString
+  duration: MyString
+  quantity: MyString
+  notes: MyString
+  completed: MyString
+  user: one
+
+two:
+  task: MyString
+  duration: MyString
+  quantity: MyString
+  notes: MyString
+  completed: MyString
+  user: two
