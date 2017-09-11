@@ -3,10 +3,10 @@
 <p id="notice"><%= notice %></p>
  <div class="container-fluid">
     <div class="jumbotron">
-        <h1 class="text-center">Welcome back <%= @user.name %></h1>
+        <h1 class="text-center">Welcome back <%= @user.name.capitalize %></h1>
         <p class="text-center" >
            <strong>Username:</strong>
-           <%= @user.username %>
+           <%= @user.username.capitalize %>
         </p>
         <p class="text-center" >
            <strong>Email:</strong>

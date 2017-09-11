@@ -5,7 +5,7 @@
 <h1 class='text-center'>Tasks</h1>
 
     <div class="table-responsive">
-        <table class="table">
+        <table class="table" id="table">
             <thead>
                 <tr>
                     <th>Task </th>
@@ -31,6 +31,6 @@
   </tbody>
 </table>
 
-<br>
+<%= link_to 'New Task', new_task_path, class: "btn btn-default", id: "tableButton" %>
 
-<%= link_to 'New Task', new_task_path, class: "btn btn-default" %>
+<br/>
