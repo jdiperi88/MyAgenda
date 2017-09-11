@@ -1,24 +1,20 @@
+
+
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
-
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<p>
-  <strong>Password digest:</strong>
-  <%= @user.password_digest %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+ <div class="container-fluid">
+    <div class="jumbotron">
+        <h1 class="text-center">Welcome back <%= @user.name %></h1>
+        <p class="text-center" >
+           <strong>Username:</strong>
+           <%= @user.username %>
+        </p>
+        <p class="text-center" >
+           <strong>Email:</strong>
+           <%= @user.email %>
+        </p>
+        <p class="text-center">
+          <%= link_to 'Edit User Profile', edit_user_path(@user), class: "btn btn-default" %> 
+          <%= link_to 'My Tasks', tasks_path, class: "btn btn-default" %>
+        </p>
+    </div>
+</div>

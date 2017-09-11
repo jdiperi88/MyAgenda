@@ -1,34 +1,28 @@
 <p id="notice"><%= notice %></p>
+ <div class="container-fluid">
+    <div class="jumbotron">
+        <h1 class="text-center"><%= @task.task %></h1>
+        <p class="text-center" >
+          <strong>Duration:</strong>
+          <%= @task.duration %>
+        </p>
+        <p class="text-center">
+          <strong>Quantity:</strong>
+          <%= @task.quantity %>
+        </p>
+        <p class="text-center" >
+          <strong>Notes:</strong>
+          <%= @task.notes %>
+        </p>
+        <p class="text-center" >
+          <strong>Completed:</strong>
+          <%= @task.completed %>
+        </p>
+        <p class="text-center">
+          <%= link_to 'Edit', edit_task_path(@task), class: "btn btn-default" %> 
+          <%= link_to 'Back', tasks_path, class: "btn btn-default" %>
+        </p>
+    </div>
+</div>
 
-<p>
-  <strong>Task:</strong>
-  <%= @task.task %>
-</p>
 
-<p>
-  <strong>Duration:</strong>
-  <%= @task.duration %>
-</p>
-
-<p>
-  <strong>Quantity:</strong>
-  <%= @task.quantity %>
-</p>
-
-<p>
-  <strong>Notes:</strong>
-  <%= @task.notes %>
-</p>
-
-<p>
-  <strong>Completed:</strong>
-  <%= @task.completed %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @task.user %>
-</p>
-
-<%= link_to 'Edit', edit_task_path(@task) %> |
-<%= link_to 'Back', tasks_path %>
