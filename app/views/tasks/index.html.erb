@@ -23,14 +23,14 @@
         <td><%= task.quantity %></td>
         <td><%= task.notes %></td>
         <td><%= task.completed %></td>
-        <td><%= link_to 'Show', task, class:"btn btn-default" %></td>
-        <td><%= link_to 'Edit', edit_task_path(task), class:"btn btn-default" %></td>
-        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-default btn-md" %></td>
+        <td><%= link_to 'Show', task, class:"btn btn-info" %></td>
+        <td><%= link_to 'Edit', edit_task_path(task), class:"btn btn-warning" %></td>
+        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger btn-md" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<%= link_to 'New Task', new_task_path, class: "btn btn-default", id: "tableButton" %>
+<%= link_to 'New Task', new_task_path, class: "btn btn-primary", id: "tableButton" %>
 
 <br/>
